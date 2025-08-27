@@ -1,0 +1,137 @@
+.login-or {
+  text-align: center;
+  font-size: 15px;
+  color: #4E5561;
+  font-weight: 500;
+  position: relative;
+}
+
+.login-or::after {
+  width: 100%;
+  content: "";
+  border-top: 1px solid #EBECED;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.login-or::before {
+  width: 100%;
+  content: "";
+  border-top: 1px solid #EBECED;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.login-or .span-or {
+  background-color: #FFF;
+  padding: 0 10px;
+  z-index: 9;
+  position: relative;
+}
+
+.authentication-header {
+  background: transparent;
+  box-shadow: none;
+  padding: 20px 0;
+}
+
+.login-modules {
+  border-top: 1px dashed #EBECED;
+}
+
+.bg-left-top {
+  position: absolute;
+  left: -100px;
+  top: -100px;
+  z-index: -1;
+}
+
+@media (max-width: 575.98px) {
+  .bg-left-top {
+    display: none;
+  }
+}
+
+.bg-right-bottom {
+  position: absolute;
+  right: -100px;
+  bottom: -100px;
+  z-index: -1;
+}
+
+@media (max-width: 575.98px) {
+  .bg-right-bottom {
+    display: none;
+  }
+}
+
+.otp-input input {
+  border: 2px solid #EBECED;
+}
+
+.otp-input input.active {
+  border: 2px solid #FF008A !important;
+}
+
+.password-strength span {
+  width: 100%;
+  height: 5px;
+  background: #e3e3e3;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.poor-active span.active#poor,
+.poor-active span.active#poors {
+  background: #E70D0D;
+}
+
+.avg-active span.active#poor,
+.avg-active span.active#weak,
+.avg-active span.active#poors,
+.avg-active span.active#weaks {
+  background: #FFC107;
+}
+
+.strong-active span.active#poor,
+.strong-active span.active#weak,
+.strong-active span.active#strong,
+.strong-active span.active#poors,
+.strong-active span.active#weaks,
+.strong-active span.active#strongs {
+  background: #5625E8;
+}
+
+.heavy-active span.active#poor,
+.heavy-active span.active#weak,
+.heavy-active span.active#strong,
+.heavy-active span.active#heavy,
+.heavy-active span.active#poors,
+.heavy-active span.active#weaks,
+.heavy-active span.active#strongs,
+.heavy-active span.active#heavys {
+  background: #03C95A;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+.footer-copyright .maintenance-icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.footer-copyright .maintenance-icons h6 {
+  margin-right: 16px;
+}
+
+.footer-copyright .maintenance-icons .icons {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
